@@ -7,10 +7,11 @@
     <title>Document | <%= title %> </title>
 </head>
 <body>
+
+    <%- include('./partials/nav.ejs') %>
+
     <p>this is a file to read in a server with view engine </p>
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/blogs/create">blog</a>
+   
 
     <% if(blogs.length > 0){ %>
     <% blogs.forEach (blog => { %>
